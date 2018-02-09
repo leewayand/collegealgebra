@@ -1,0 +1,243 @@
+\documentclass{ximera}
+
+\input{../../../preamble.tex}
+
+
+
+\outcome{Identify pairs in a relation.}
+
+
+\begin{document}
+
+\begin{definition}
+  During the annual Totman reunion, A group from the Totman family played badminton. The map below identifies the pairs in the \textbf{Badminton} function.
+  
+  
+
+    \includegraphics[width=245px,height=352px]{pics/badminton.png}
+
+  
+ 
+
+  The \dfn{Badminton} relation includes three sets:
+    \begin{itemize}
+    \item A first set consisting of 8 family members identified in the map.
+    \item A second set consisting of the same 8 family members identified in the map.
+    \item A set of family ordered pairs. The pair (first person, second person) is a member of the Badminton relation if the first person and the second person played each other in Badminton.
+    \end{itemize}
+
+  
+\end{definition}
+
+
+
+\begin{exercise}
+ ({\includegraphics[width=50px,height=65px]{pics/people/emily.png}}, {\includegraphics[width=50px,height=65px]{pics/people/dan.png}}) $\in$ Badminton 
+
+  \begin{multipleChoice}
+    \choice{True}
+    \choice[correct]{False}
+  \end{multipleChoice}
+  \begin{feedback}
+The map does not connect Emily and Dan.
+  \end{feedback}
+\end{exercise}
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{exercise}
+How many Badminton games were played? $\answer{7}$
+  \begin{feedback}
+Each line in the map represents a game.
+  \end{feedback}
+\end{exercise}
+
+
+
+
+\begin{exercise}
+How many pairs are in the Badminton relation? $\answer{14}$
+  \begin{feedback}
+Each line in the map represents two pairs.
+  \end{feedback}
+\end{exercise}
+
+
+
+
+
+\begin{definition}
+The Badminton group decided to form two teams and play a match. The map below identifies the pairs in the \textbf{TeamBadminton} function.
+  
+  
+
+    \includegraphics[width=245px,height=352px]{pics/badminton.png}
+
+  
+ 
+
+  The \dfn{TeamBadminton} relation includes three sets:
+    \begin{itemize}
+    \item A first set, called Team 1, consisting of 4 family members identified in the map.
+    \item A second set , called Team 2, consisting of 4 family members identified in the map.
+    \item A set of family ordered pairs. The pair (first person, second person) is a member of the Badminton relation  provided
+            \begin{itemize}
+            \item person1 is on Team 1.
+            \item person2 is on Team 2.
+            \item person1 played person2 is a game of Badminton.
+            \end{itemize}
+
+    \end{itemize}
+
+  
+\end{definition}
+
+
+
+
+
+
+
+
+
+
+\begin{exercise}
+
+ ({\includegraphics[width=50px,height=65px]{pics/people/dawn.png}}, {\includegraphics[width=50px,height=65px]{pics/people/derek.png}}) $\in$ TeamBadminton 
+
+  \begin{multipleChoice}
+    \choice{True}
+    \choice[correct]{False}
+  \end{multipleChoice}
+  \begin{feedback}
+Derek is on Team 1 and would need to be listed first in the pair.
+  \end{feedback}
+\end{exercise}
+
+
+
+\begin{exercise}
+
+ ({\includegraphics[width=50px,height=65px]{pics/people/dawn.png}}, {\includegraphics[width=50px,height=65px]{pics/people/derek.png}}) $\in$ TeamBadminton 
+
+  \begin{multipleChoice}
+    \choice{True}
+    \choice[correct]{False}
+  \end{multipleChoice}
+  \begin{feedback}
+Derek is on Team 1 and would need to be listed first in the pair.
+  \end{feedback}
+\end{exercise}
+
+
+
+
+
+
+\begin{exercise}
+
+
+
+ ({\includegraphics[width=50px,height=65px]{pics/people/emily.png}}, {\includegraphics[width=50px,height=65px]{pics/people/james.png}}) $\in$ TeamBadminton 
+
+  \begin{multipleChoice}
+    \choice[correct]{True}
+    \choice{False}
+  \end{multipleChoice}
+  \begin{feedback}
+Emily is on Team 1. James is on Team 2.  They played a game of Badminton.
+  \end{feedback}
+\end{exercise}
+
+
+
+\begin{exercise}
+Is TeamBadminton reflexive?
+
+  \begin{multipleChoice}
+    \choice{Yes}
+    \choice[correct]{No}
+  \end{multipleChoice}
+  \begin{feedback}
+A person is not on both Team 1 and Team 2.
+  \end{feedback}
+\end{exercise}
+
+
+
+
+\begin{exercise}
+Is TeamBadminton symmetric?
+
+  \begin{multipleChoice}
+    \choice{Yes}
+    \choice[correct]{No}
+  \end{multipleChoice}
+  \begin{feedback}
+  If (person1, person2) is in TeamBadminton, then person1 is on Team 1, therefore the pair (person2, person1) cannot be in TeamBadminton.
+  \end{feedback}
+\end{exercise}
+
+
+
+
+
+\begin{exercise}
+Is TeamBadminton transitive?
+
+  \begin{multipleChoice}
+    \choice[correct]{Yes}
+    \choice{No}
+  \end{multipleChoice}
+  \begin{feedback}
+If (person1, person2) is in TeamBadminton, then (person2, person3) cannot be in TeamBadminton.  That means there is not situation where both (person1, person2) and (person2, person3) are in TeamBadminton.  This mens there is no way to violate the transitive definition.  The transitive definition is automatically valid.
+  \end{feedback}
+\end{exercise}
+
+
+
+
+\begin{exercise}
+How many solutions are there to the following statement?  
+
+({\includegraphics[width=50px,height=65px]{pics/people/hannah.png}}, PERSON) $\in$ TeamBadminton 
+
+\[  \answer{2} \]
+
+  \begin{feedback}
+Hannah played Carl and Dan from Team 2.
+  \end{feedback}
+\end{exercise}
+
+
+
+
+
+\begin{exercise}
+How many solutions are there to the following statement?  
+
+(PERSON, {\includegraphics[width=50px,height=65px]{pics/people/Matthew.png}} ) $\in$ TeamBadminton 
+
+\[  \answer{0} \]
+
+  \begin{feedback}
+Matthew is on Team 1 and cannot be in the second position of a pair.
+  \end{feedback}
+\end{exercise}
+
+
+
+
+
+
+
+\end{document}
