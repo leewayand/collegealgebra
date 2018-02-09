@@ -1,0 +1,186 @@
+\documentclass{ximera}
+
+\input{../../../preamble.tex}
+
+
+
+\outcome{Identify pairs in a relation.}
+
+
+\begin{document}
+
+\begin{exercise}
+  A group from the Totman family went to the theatre. The map below identifies the pairs in the NextTo function.
+  
+  
+  \begin{image}
+    \includegraphics[width=321px,height=285px]{pics/standinline.png}
+  \end{image}
+  
+ 
+  \begin{definition}
+  The \dfn{NextTo} relation includes three sets:
+    \begin{itemize}
+    \item A first set consisting of 8 family members identified in the map.
+    \item A second set consisting of 8 family members identified in the map.
+    \item A set of family ordered pairs. The pair (first person, second person) is a member of the NexTo relation if the first person and the second person were standing next to each other in line.
+    \end{itemize}
+  \end{definition}
+  
+\end{exercise}
+
+
+
+\begin{exercise}
+ ({\includegraphics[width=50px,height=65px]{pics/people/lily.png}}, {\includegraphics[width=50px,height=65px]{pics/people/hannah.png}}) $\in$ Sibling 
+
+  \begin{multipleChoice}
+    \choice[correct]{True}
+    \choice{False}
+  \end{multipleChoice}
+  \begin{feedback}
+Lily and Hannah are connect in the map.
+  \end{feedback}
+\end{exercise}
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{exercise}
+Who was not the first family member in line?
+
+  \begin{selectAll}
+    \choice{Jeff}
+    \choice[correct]{Victoria}
+    \choice{Hannah}
+    \choice{Martin}
+    \choice[correct]{Quinn}
+     \choice{Erin}
+     \choice{Beth}
+     \choice{Lily}
+  \end{selectAll}
+  \begin{feedback}
+The first and last person in line are connected to only one other person.
+  \end{feedback}
+\end{exercise}
+
+
+
+
+
+
+
+
+
+\begin{exercise}
+
+Suppose Victoria was the first family member in line. Now, let the map define the InFrontOf relation
+
+  \begin{definition}
+  The \dfn{InFrontOf} relation includes three sets:
+    \begin{itemize}
+    \item A first set consisting of 8 family members identified in the map.
+    \item A second set consisting of 8 family members identified in the map.
+    \item A set of family ordered pairs. The pair (first person, second person) is a member of the InFrontOf relation if the first person is standing in front of the second person in line.
+    \end{itemize}
+  \end{definition}
+
+
+ ({\includegraphics[width=50px,height=65px]{pics/people/martin.png}}, {\includegraphics[width=50px,height=65px]{pics/people/erin.png}}) $\in$ InFrontOf 
+
+  \begin{multipleChoice}
+    \choice{True}
+    \choice[correct]{False}
+  \end{multipleChoice}
+  \begin{feedback}
+Erin is standing in front of Martin.
+  \end{feedback}
+\end{exercise}
+
+
+
+
+\begin{exercise}
+
+ ({\includegraphics[width=50px,height=65px]{pics/people/jeff.png}}, {\includegraphics[width=50px,height=65px]{pics/people/quinn.png}}) $\in$ InFrontOf 
+
+  \begin{multipleChoice}
+    \choice{True}
+    \choice[correct]{False}
+  \end{multipleChoice}
+  \begin{feedback}
+Quinn is last in line. Everyone is in front of him.
+  \end{feedback}
+\end{exercise}
+
+
+
+\begin{exercise}
+Is InFrontOf reflexive?
+
+  \begin{multipleChoice}
+    \choice{Yes}
+    \choice[correct]{No}
+  \end{multipleChoice}
+  \begin{feedback}
+  (person1, person1) cannot be in InFrontOf, since a person cannot be standing in front of himself or herself.
+  \end{feedback}
+\end{exercise}
+
+
+
+
+\begin{exercise}
+Is InFrontOf symmetric?
+
+  \begin{multipleChoice}
+    \choice{Yes}
+    \choice[correct]{No}
+  \end{multipleChoice}
+  \begin{feedback}
+  If (person1, person2) is in InFrontOf, then person1 was standing in front of person2.  In that case, person2 was not standing in front of person1 and (person2, person1) is not in InFrontOf.
+  \end{feedback}
+\end{exercise}
+
+
+
+
+
+\begin{exercise}
+Is Sibling transitive?
+
+  \begin{multipleChoice}
+    \choice[correct]{Yes}
+    \choice{No}
+  \end{multipleChoice}
+  \begin{feedback}
+If (person1, person2) is in Sibling and (person2, person3) is in Sibling, then person1was standing in front of person2, and person2 was standing in front of person3. Therefore, person1 is standing in front of person3 and (person1, person3) is in Sibling.
+  \end{feedback}
+\end{exercise}
+
+
+
+
+\begin{exercise}
+How many solutions are there to the following statement?  
+
+({\includegraphics[width=50px,height=65px]{pics/people/martinpng}}, PERSON) $\in$ Sibling 
+
+\[  \answer{2} \]
+
+  \begin{feedback}
+Erin and Victoria are standing in front of Martin.
+  \end{feedback}
+\end{exercise}
+
+
+
+\end{document}
