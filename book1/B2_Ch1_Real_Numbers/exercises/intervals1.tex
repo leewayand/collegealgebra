@@ -31,13 +31,13 @@ integer function:
             domain=-2:4,
             width=6in,
             height=1in,
-            axis lines =middle, xlabel=$x$, ylabel=$y$,
+            axis lines =middle, xlabel=$ $, ylabel=$ $,
             every axis y label/.style={at=(current axis.above origin),anchor=south},
             every axis x label/.style={at=(current axis.right of origin),anchor=west},
             clip=false,
             %axis on top,
           ]
-          \addplot [textColor, very thin, domain=(0:2.3)] {0}; % puts the axis back, axis on top clobbers our open holes
+          \addplot [textColor, very thin, domain=(-5:5)] {0}; % puts the axis back, axis on top clobbers our open holes
           \addplot [textColor, very thin] plot coordinates {(0,-0.3) (0,0.3)}; % puts the axis back, axis on top clobbers our open holes
 	  %\addplot [very thick, penColor, domain=(-2:-1)] {-2};
           %\addplot [very thick, penColor, domain=(-1:0)] {-1};
