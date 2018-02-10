@@ -39,24 +39,11 @@ integer function:
           ]
           \addplot [textColor, very thin, domain=(-5:5)] {0}; % puts the axis back, axis on top clobbers our open holes
           \addplot [textColor, very thin] plot coordinates {(0,-0.3) (0,0.3)}; % puts the axis back, axis on top clobbers our open holes
-	  %\addplot [very thick, penColor, domain=(-2:-1)] {-2};
-          %\addplot [very thick, penColor, domain=(-1:0)] {-1};
+
           \addplot [very thick, penColor, domain=(0:1)] {0.1};
-          %\addplot [very thick, penColor, domain=(1:2)] {1};
-         % \addplot [very thick, penColor, domain=(2:3)] {2};
-          %\addplot [very thick, penColor, domain=(3:4)] {3};
-          %\addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(-2,-2)};  %% closed hole          
-         % \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(-1,-1)};  %% closed hole          
           \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(0,0.1)};  %% closed hole          
-          %\addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(1,1)};  %% closed hole          
-         % \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(2,2)};  %% closed hole  
-          %\addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(3,3)};  %% closed hole                  
-         % \addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(-1,-2)};  %% open hole
-          %\addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(0,-1)};  %% open hole
           \addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(1,0.1)};  %% open hole
-        %  \addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(2,1)};  %% open hole
-        %  \addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(3,2)};  %% open hole
-         % \addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(4,3)};  %% open hole
+
         \end{axis}
 \end{tikzpicture}
 %% \caption{A plot of $f(x)=\lfloor x\rfloor$. Here we can see that for each input (a
