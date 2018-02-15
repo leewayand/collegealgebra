@@ -7,85 +7,81 @@
 \outcome{Identify pairs in a relation.}
 
 
-\begin{document}
-
-seven
 
 \begin{definition}
-  The function \dfn{Consonants} pairs a string of letters with the same string, but the vowels removed, leaving only the consonants.
- 
-    \begin{itemize}
-    \item The domain of Consonants is all strings of letters in the English alphabet.
-    \item The codomain of Consonants is all strings of letters in the English alphabet.
-    \item The pair (string1, string2) is a member of the Consonants function if string2 is string1 with the vowels removed.
-    \end{itemize}
 
-  
+Let Bike = \{  A, B, C, D \}.
+Let Car = \{  1, 2, 3  \}.
+
+Let Pairs1 = \{ (A, 3), (B, 2), (C, 3), (D, 2)  \}.
+Let Pairs2 = \{ (A, 1), (B, 2),  (D, 3)  \}.
+Let Pairs3 = \{ (1, C), (2, C), (3, D)  \}.
+
+
+
 \end{definition}
 
 
 
-\begin{exercise}
-
- Evaluate Consonants("mathematics")
-
-  \begin{multipleChoice}
-    \choice{mathematics}
-    \choice[correct]{"mthmtcs"}
-  \end{multipleChoice}
-  \begin{feedback}
-"Remove" a, e, a, and i from mathematics and you get "mthmtcs".
-  \end{feedback}
-\end{exercise}
-
 
 
 \begin{exercise}
 
- Evaluate Consonants("twhmk")
+Does Pairs1 define Bike as a function of Car?
 
-  \begin{multipleChoice}
-    \choice[correct]{"twhmk"}
-    \choice{"twhmk" is not in the domain}
-  \end{multipleChoice}
-  \begin{feedback}
-"twhmk" is a string of letters. If you remove the vowels, then you end up with the same string.
-  \end{feedback}
-\end{exercise}
-
-
-\begin{exercise}
-Consonants("wikoomdart") = $\answer{"wkmdrt"}$
-\end{exercise}
-
-
-\begin{exercise}
-
-Does the range of Consonants equal the codomain.
-
-  \begin{multipleChoice}
-    \choice{Yes}
-    \choice[correct]{No}
-  \end{multipleChoice}
-  \begin{feedback}
-The codomain contains "cat" and the range does not.
-  \end{feedback}
-\end{exercise}
-
-
-
-
-\begin{exercise}
-
-If string1 and string2 are two different strings of letters, then is it possible for Consonants(string1) = Consonants(string2)?
 
   \begin{multipleChoice}
     \choice[correct]{Yes}
     \choice{No}
   \end{multipleChoice}
-  \begin{feedback}
-Example: Consonants("book") = Consonants("bake")?
-  \end{feedback}
+
+\end{exercise}
+
+
+
+
+\begin{exercise}
+
+Does Pairs2 define Bike as a function of Car?
+
+
+  \begin{multipleChoice}
+    \choice{Yes}
+    \choice[correct]{No}
+  \end{multipleChoice}
+
+\end{exercise}
+
+
+
+
+
+\begin{exercise}
+
+Does Pairs2 define Car as a function of Bike?
+
+
+  \begin{multipleChoice}
+    \choice{Yes}
+    \choice[correct]{No}
+  \end{multipleChoice}
+
+\end{exercise}
+
+
+
+
+
+\begin{exercise}
+
+Does Pairs3 define Car as a function of Bike?
+
+
+  \begin{multipleChoice}
+    \choice[correct]{Yes}
+    \choice{No}
+  \end{multipleChoice}
+
 \end{exercise}
 
 
