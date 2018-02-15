@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=latex 2017.5.23)  15 FEB 2018 13:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=latex 2017.5.23)  15 FEB 2018 12:46
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -9,12 +9,8 @@ de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
 documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
  tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{
 \HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode ximera,charset=utf-8,-css.a
-.b.c.\input  B1_Ch3_Flags_exercises.tex
-(./B1_Ch3_Flags_exercises.tex
-(/Users/lwayand/Library/texmf/tex/latex/ximeraLatex/xourse.cls
-Document Class: xourse 2015/07/15 Version 1.26 by Bart Snapp, Oscar Levin, Hans
- Parshall
-(/Users/lwayand/Library/texmf/tex/latex/ximeraLatex/ximera.cls
+.b.c.\input  flags_3.tex
+(./flags_3.tex (/Users/lwayand/Library/texmf/tex/latex/ximeraLatex/ximera.cls
 Document Class: ximera 2016/08/17 Version 1.31 by Bart Snapp
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -1129,7 +1125,7 @@ Package: forloop 2006/09/18 v3.0 For Loops for LaTeX
 \c@shuffle@desiredProblems=\count306
 \c@problem=\count307
 \c@problemType=\count308
-))
+)
 (../../../preamble.tex
 (/usr/local/texlive/2017/texmf-dist/tex/latex/esint/esint.sty
 Package: esint 
@@ -1442,15 +1438,15 @@ version 2017-05-09-09:21
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/tex4ht/tex4ht.sty
 version 2016-07-18-16:08
 
---- needs --- tex4ht B1_Ch3_Flags_exercises ---
+--- needs --- tex4ht flags_3 ---
 \tmp:cnt=\count340
-\openout15 = `B1_Ch3_Flags_exercises.tmp'.
+\openout15 = `flags_3.tmp'.
 
-(./B1_Ch3_Flags_exercises.tmp)
+(./flags_3.tmp)
 \tmp:dim=\skip140
- (./B1_Ch3_Flags_exercises.xref)
+ (./flags_3.xref)
 \:refout=\write6
-\openout6 = `B1_Ch3_Flags_exercises.xref'.
+\openout6 = `flags_3.xref'.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/tex4ht/html4.4ht
@@ -1536,10 +1532,10 @@ version 2017-03-30-16:04
 --- Note --- for linear crosslinks of pages, use the command line option `next'
 
 --------------------------------------
-\openout15 = `B1_Ch3_Flags_exercises.4ct'.
+\openout15 = `flags_3.4ct'.
 
 \:tocout=\write7
-\openout7 = `B1_Ch3_Flags_exercises.4tc'.
+\openout7 = `flags_3.4tc'.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/tex4ht/html4.4ht
@@ -1656,33 +1652,17 @@ version 2017-05-09-09:20
 (/usr/local/texlive/2017/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2017-03-30-16:04
 ))
-(/Users/lwayand/Library/texmf/tex/latex/ximeraLatex/xourse.4ht
-version 2015-08-22-10:35
-\c@ximera@part=\count341
-
-/Users/lwayand/Library/texmf/tex/latex/ximeraLatex/xourse.4ht:53: Too many }'s.
-l.53 }
-      
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/tex4ht/html4.4ht
-version 2017-05-09-09:20
-)
-(/usr/local/texlive/2017/texmf-dist/tex/generic/tex4ht/html4-math.4ht
-version 2017-03-30-16:04
-))
 (/Users/lwayand/Library/texmf/tex/latex/ximeraLatex/ximera.4ht
 version 2014-01-26-09:44
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2016/05/14 v2.6a Micro-typographical refinements (RS)
 \MT@toks=\toks61
-\MT@count=\count342
+\MT@count=\count341
 LaTeX Info: Redefining \textls on input line 774.
 \MT@outer@kern=\dimen304
 LaTeX Info: Redefining \textmicrotypecontext on input line 1310.
-\MT@listname@count=\count343
+\MT@listname@count=\count342
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2016/05/14 v2.6a Definitions specific to pdftex (RS)
@@ -1696,8 +1676,8 @@ Package microtype Info: Loading configuration file microtype.cfg.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2016/05/14 v2.6a microtype main configuration file (RS)
 ))
-\c@identification=\count344
-\c@choiceId=\count345
+\c@identification=\count343
+\c@choiceId=\count344
 
 /Users/lwayand/Library/texmf/tex/latex/ximeraLatex/ximera.4ht:223: Illegal para
 meter number in definition of \desmos.
@@ -1928,7 +1908,7 @@ version 2017-03-30-16:04
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/tex4ht/mdframed.4ht
 version 2017-04-28-08:47
-\mdf:env:cnt=\count346
+\mdf:env:cnt=\count345
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2017-05-09-09:20
@@ -1945,7 +1925,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count347
+\c@section@level=\count346
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/tex4ht/nameref.4ht
 version 2016-12-26-14:53
@@ -1998,16 +1978,15 @@ version 2017-05-09-09:20
 (/usr/local/texlive/2017/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2017-03-30-16:04
 ))
-runsystem(sed -i "/@/d" B1_Ch3_Flags_exercises.jax)...executed.
+runsystem(sed -i "/@/d" flags_3.jax)...executed.
 
-runsystem(sed -i "s/##\\([0-9]\\)/#\\1/g" B1_Ch3_Flags_exercises.jax)...execute
-d.
+runsystem(sed -i "s/##\\([0-9]\\)/#\\1/g" flags_3.jax)...executed.
 
 
-(./B1_Ch3_Flags_exercises.oc)
+(./flags_3.oc)
 \eqtoks=\toks62
- (./B1_Ch3_Flags_exercises.aux)
-\openout1 = `B1_Ch3_Flags_exercises.aux'.
+ (./flags_3.aux)
+\openout1 = `flags_3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
 LaTeX Font Info:    ... okay on input line 125.
@@ -2030,7 +2009,7 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.14} into
 your preamble.
  on input line 125.
 
-\c@lstlisting=\count348
+\c@lstlisting=\count347
 \AtBeginShipoutBox=\box114
 Package hyperref Info: Link coloring ON on input line 125.
 LaTeX Info: Redefining \ref on input line 125.
@@ -2053,18 +2032,6 @@ l.169 \fi
          
 I'm ignoring this; it doesn't match any \if.
 
-/Users/lwayand/Library/texmf/tex/latex/ximeraLatex/ximera.cfg:177: Undefined co
-ntrol sequence.
-\a:@HEAD ...ame="og:image" content="}\xourse@logo 
-                                                  \HCode {" />\Hnewline }\HC...
-l.177 \EndPreamble
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 
 LaTeX Warning: No \author given.
 
@@ -2073,27 +2040,55 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 )
-Overfull \hbox (10113.6573pt too wide) in paragraph at lines 177--13
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (10113.6573pt too wide) in paragraph at lines 177--11
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [1
 
-] [2] [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 17.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 17.
- (./B1_Ch3_Flags_exercises.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 17.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 17.
+] [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 16.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
+LaTeX Font Info:    Try loading font information for U+msa on input line 27.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 27.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+esint on input line 27.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/esint/uesint.fd
+File: uesint.fd 
+) [3] [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
+
+(./flags_3.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 130.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 130.
  ) 
 Here is how much of TeX's memory you used:
- 48679 strings out of 492996
- 1070114 string characters out of 6132730
- 1455206 words of memory out of 5000000
- 51229 multiletter control sequences out of 15000+600000
- 3808 words of font info for 15 fonts, out of 8000000 for 9000
+ 48788 strings out of 492996
+ 1071470 string characters out of 6132730
+ 1454120 words of memory out of 5000000
+ 51315 multiletter control sequences out of 15000+600000
+ 6016 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,5n,100p,10898b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81i,5n,98p,10882b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on B1_Ch3_Flags_exercises.dvi (4 pages, 27008 bytes).
+Output written on flags_3.dvi (5 pages, 30388 bytes).

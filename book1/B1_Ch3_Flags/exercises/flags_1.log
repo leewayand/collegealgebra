@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=latex 2017.5.23)  11 FEB 2018 21:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=latex 2017.5.23)  15 FEB 2018 12:04
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2107,21 +2107,45 @@ l.96 --- TeX4ht warning --- File `"pics/flags/G.xbb"' not found ---
 l.96 --- TeX4ht warning --- Cannot determine size of graphic in "pics/flags/G.x
 bb" (no BoundingBox) ---
 l. 96 --- needs --- pics/flags/G.png ---
+l.144 --- TeX4ht warning --- File `"pics/flags/A.xbb"' not found ---
+l.144 --- TeX4ht warning --- Cannot determine size of graphic in "pics/flags/A.
+xbb" (no BoundingBox) ---
+l. 144 --- needs --- pics/flags/A.png ---
+l.145 --- TeX4ht warning --- File `"pics/flags/E.xbb"' not found ---
+l.145 --- TeX4ht warning --- Cannot determine size of graphic in "pics/flags/E.
+xbb" (no BoundingBox) ---
+l. 145 --- needs --- pics/flags/E.png ---
+l.146 --- TeX4ht warning --- File `"pics/flags/I.xbb"' not found ---
+l.146 --- TeX4ht warning --- Cannot determine size of graphic in "pics/flags/I.
+xbb" (no BoundingBox) ---
+l. 146 --- needs --- pics/flags/I.png ---
+l.147 --- TeX4ht warning --- File `"pics/flags/K.xbb"' not found ---
+l.147 --- TeX4ht warning --- Cannot determine size of graphic in "pics/flags/K.
+xbb" (no BoundingBox) ---
+l. 147 --- needs --- pics/flags/K.png ---
+l.148 --- TeX4ht warning --- File `"pics/flags/O.xbb"' not found ---
+l.148 --- TeX4ht warning --- Cannot determine size of graphic in "pics/flags/O.
+xbb" (no BoundingBox) ---
+l. 148 --- needs --- pics/flags/O.png ---
+l.149 --- TeX4ht warning --- File `"pics/flags/U.xbb"' not found ---
+l.149 --- TeX4ht warning --- Cannot determine size of graphic in "pics/flags/U.
+xbb" (no BoundingBox) ---
+l. 149 --- needs --- pics/flags/U.png ---
 [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 168.
  [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 168.
  (./flags_1.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 119.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 119.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 168.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 168.
  ) 
 Here is how much of TeX's memory you used:
- 48815 strings out of 492996
- 1071856 string characters out of 6132730
- 1454116 words of memory out of 5000000
- 51333 multiletter control sequences out of 15000+600000
+ 48833 strings out of 492996
+ 1072102 string characters out of 6132730
+ 1454126 words of memory out of 5000000
+ 51346 multiletter control sequences out of 15000+600000
  6016 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,6n,98p,10882b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on flags_1.dvi (5 pages, 31980 bytes).
+Output written on flags_1.dvi (5 pages, 34904 bytes).
