@@ -37,10 +37,6 @@ Below is the drawing of an interval.  What is the interval notation for this int
 
         \end{axis}
 \end{tikzpicture}
-%% \caption{A plot of $f(x)=\lfloor x\rfloor$. Here we can see that for each input (a
-%%   value on the $x$-axis), there is exactly one output (a value on the
-%%   $y$-axis).}
-%% \label{plot:greatest-integer fxn}
 \end{image}
 
 
@@ -57,15 +53,6 @@ Below is the drawing of an interval.  What is the interval notation for this int
 
 
 
-
-
-
-
-
-
-\begin{exercise}
-How many items are in the codomain of sparrow? $\answer{5}$
-\end{exercise}
 
 
 
@@ -96,6 +83,45 @@ Select all invalid interval notations.
 \end{selectAll}
 \end{exercise}
 
+
+
+
+
+\begin{exercise}
+Below is the drawing of an interval.  What is the interval notation for this interval?
+\begin{image}
+\begin{tikzpicture}
+	\begin{axis}[
+            domain=-2:4,
+            width=6in,
+            height=1in,
+            axis lines =middle, xlabel=$ $, ylabel=$ $,
+            ymajorticks=false,
+            every axis y label/.style={at=(current axis.above origin),anchor=south},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west},
+            clip=false,
+            %axis on top,
+          ]
+          \addplot [textColor, very thin, domain=(-5:5)] {0}; % puts the axis back, axis on top clobbers our open holes
+          \addplot [textColor, very thin] plot coordinates {(0,-0.3) (0,0.3)}; % puts the axis back, axis on top clobbers our open holes
+
+          \addplot [very thick, penColor, domain=(-3:2)] {0.1};
+          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(-3,0.1)};  %% closed hole          
+          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(2,0.1)};  %% open hole
+
+        \end{axis}
+\end{tikzpicture}
+\end{image}
+
+
+\begin{multipleChoice}
+\choice{$[2, -3]$}
+\choice{$(2, -3]$}
+\choice{$[-3, 2)$}
+\choice[correct]{$[-3, 2)]$}
+\end{multipleChoice}
+
+\end{exercise}
 
 
 
