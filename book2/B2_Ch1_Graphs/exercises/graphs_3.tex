@@ -37,11 +37,15 @@ The dots below represent function pairs.
 
           %\addplot [very thick, penColor, domain=(-1:2)] {x^2};
           \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(-2,-1)};  %% closed hole    
-           \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(2,1)};  %% closed hole        
+          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(2,1)};  %% closed hole   
+          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(-1,2)};  %% closed hole        
+           \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(1,-2)};  %% closed hole        
           %\addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(1,0.1)};  %% open hole
           
-          \node at  (axis cs:2.1,1) {A};
-           \node at  (axis cs:-2.1,-1) {B};
+          \node at  (axis cs:2.2,1) {A};
+          \node at  (axis cs:-2.2,-1) {B};
+          \node at  (axis cs:-1.2,2) {C};
+          \node at  (axis cs:1.2,-2) {D};
 
         \end{axis}
 \end{tikzpicture}
