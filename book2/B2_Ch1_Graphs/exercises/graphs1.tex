@@ -1,0 +1,107 @@
+\documentclass{ximera}
+
+\input{../../../preamble.tex}
+
+
+
+\outcome{Identify pairs in a relation.}
+
+
+\begin{document}
+
+
+
+
+
+
+
+
+\begin{definition}
+Below is the drawing of an interval.  What is the interval notation for this interval?
+\begin{image}
+\begin{tikzpicture}
+	\begin{axis}[
+            domain=-2:4,
+            width=3in,
+            height=3in,
+            axis lines =middle, xlabel=$w$, ylabel=$T$,
+            ymajorticks=false,
+            every axis y label/.style={at=(current axis.above origin),anchor=south},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west},
+            clip=false,
+            %axis on top,
+          ]
+          \addplot [textColor, very thin, domain=(-5:5)] {0}; % puts the axis back, axis on top clobbers our open holes
+          \addplot [textColor, very thin] plot coordinates {(0,-3) (0,3)}; % puts the axis back, axis on top clobbers our open holes
+
+          \addplot [very thick, penColor, domain=(0:1)] {0.1};
+          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(0,0.1)};  %% closed hole          
+          \addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(1,0.1)};  %% open hole
+
+        \end{axis}
+\end{tikzpicture}
+\end{image}
+
+\end{definition}
+
+
+
+
+
+
+
+\begin{exercise}
+Select all reductions of $[-3, 4] \cup (-1, 5) \cup \{  0 \}$ 
+
+\begin{selectAll}
+\choice{$[-3, 5]$}
+\choice{$[-3, 5] \cup \{ 0 \} $}
+\choice{$\{ 0 \} \cup [-3, 5)$}
+\choice[correct]{$[-3, 5)$}
+\end{selectAll}
+
+\end{exercise}
+
+
+
+
+
+
+\begin{exercise}
+Select all reductions of $[-3, 4] \cup (-1, 5) \cup \{  -4 \}$ 
+
+\begin{selectAll}
+\choice{$[-3, 5]$}
+\choice[correct]{$[-3, 5] \cup \{ -4 \} $}
+\choice[correct]{$\{ -4 \} \cup [-3, 5)$}
+\choice{$[-4, 5)$}
+\end{selectAll}
+
+\end{exercise}
+
+
+
+
+
+\begin{exercise}
+Select all reductions of $[-3, 4] \cup (-1, 5) \cup \{  -4, 6 \}$ 
+
+\begin{selectAll}
+\choice{$[-3, 5]$}
+\choice[correct]{$[-3, 5] \cup \{ -4, 6 \} $}
+\choice[correct]{$\{ -4 \} \cup [-3, 5) \cup \{ 6 \}$}
+\choice{$[-3, 6]$}
+\end{selectAll}
+
+\end{exercise}
+
+
+
+
+
+
+
+
+
+
+\end{document}
