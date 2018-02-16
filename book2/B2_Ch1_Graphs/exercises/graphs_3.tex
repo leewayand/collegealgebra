@@ -36,11 +36,12 @@ The dots below represent function pairs.
           \addplot [textColor, very thin] plot coordinates {(0,-3) (0,3)}; % puts the axis back, axis on top clobbers our open holes
 
           %\addplot [very thick, penColor, domain=(-1:2)] {x^2};
-          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(-3,2)};  %% closed hole    
+          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(-2,-1)};  %% closed hole    
            \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(2,1)};  %% closed hole        
           %\addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(1,0.1)};  %% open hole
           
-          \node at  (axis cs:1,1) {some text};
+          \node at  (axis cs:2.1,1) {A};
+           \node at  (axis cs:-2.1,-1) {B};
 
         \end{axis}
 \end{tikzpicture}
