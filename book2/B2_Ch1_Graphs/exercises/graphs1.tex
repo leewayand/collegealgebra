@@ -22,8 +22,8 @@ Below is the drawing of an interval.  What is the interval notation for this int
 \begin{tikzpicture}
 	\begin{axis}[
             domain=-2:4,
-            width=3in,
-            height=3in,
+            width=2in,
+            height=2in,
             axis lines =middle, xlabel=$w$, ylabel=$T$,
             xtick={-4, -3, -2, -1, 1,2, 3, 4},
             ytick={-4, -3, -2, -1, 1,2, 3, 4},
@@ -35,9 +35,9 @@ Below is the drawing of an interval.  What is the interval notation for this int
           \addplot [textColor, very thin, domain=(-5:5)] {0}; % puts the axis back, axis on top clobbers our open holes
           \addplot [textColor, very thin] plot coordinates {(0,-3) (0,3)}; % puts the axis back, axis on top clobbers our open holes
 
-          \addplot [very thick, penColor, domain=(-1:2)] {x^2};
-          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(0,0.1)};  %% closed hole          
-          \addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(1,0.1)};  %% open hole
+          %\addplot [very thick, penColor, domain=(-1:2)] {x^2};
+          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(2,-1)};  %% closed hole          
+          %\addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(1,0.1)};  %% open hole
 
         \end{axis}
 \end{tikzpicture}
