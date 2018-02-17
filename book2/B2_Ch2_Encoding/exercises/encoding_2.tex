@@ -36,7 +36,7 @@ The graph below represent function pairs for the function g.
           \addplot [textColor, very thin, domain=(-5:5)] {0}; % puts the axis back, axis on top clobbers our open holes
           \addplot [textColor, very thin] plot coordinates {(0,-3) (0,3)}; % puts the axis back, axis on top clobbers our open holes
 
-          \addplot [very thick, penColor, domain=(-4:-1)] {0.7*(x+5)*(x+2)};
+          \addplot [very thick, penColor, domain=(-4:-1), mark=at position 0.5 with {\arrow{>};}] {0.7*(x+5)*(x+2)};
           \addplot [very thick, penColor, domain=(1.5:3)] {-2*x+4};
           
           \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(-1.5,1)};  %% closed hole    
