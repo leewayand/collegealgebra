@@ -17,14 +17,15 @@
 
 
 \begin{definition}
-The dot below represents a pair in the T function.
+The graph below represent function pairs for the function M.
 \begin{image}
 \begin{tikzpicture}
 	\begin{axis}[
             domain=-2:4,
             width=5in,
             height=3in,
-            axis lines =middle, xlabel=$w$, ylabel=$T$,
+            grid=both,
+            axis lines =middle, xlabel=$t$, ylabel=$M$,
             xtick={-4, -3, -2, -1, 1,2, 3, 4},
             ytick={-4, -3, -2, -1, 1,2, 3, 4},
             every axis y label/.style={at=(current axis.above origin),anchor=south},
@@ -35,9 +36,18 @@ The dot below represents a pair in the T function.
           \addplot [textColor, very thin, domain=(-5:5)] {0}; % puts the axis back, axis on top clobbers our open holes
           \addplot [textColor, very thin] plot coordinates {(0,-3) (0,3)}; % puts the axis back, axis on top clobbers our open holes
 
-          %\addplot [very thick, penColor, domain=(-1:2)] {x^2};
-          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(2,-1)};  %% closed hole          
-          %\addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(1,0.1)};  %% open hole
+          \addplot [very thick, penColor, domain=(-4:3)] {0.08*(x+4)*(x+2)*(x-4)+2};
+          
+          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(-4,2)};  %% closed hole    
+          %\addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(3,-0.8)};  %% closed hole   
+          %\addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(1,-2)};  %% closed hole        
+          %\addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(3,1)};  %% closed hole        
+          \addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(3,-0.8)};  %% open hole
+          
+          %\node at  (axis cs:-3.3,-2) {A};
+          %\node at  (axis cs:-2.2,0.3) {B};
+          %\node at  (axis cs:1.3,-2) {C};
+          %\node at  (axis cs:3.2,1) {D};
 
         \end{axis}
 \end{tikzpicture}
@@ -49,18 +59,33 @@ The dot below represents a pair in the T function.
 
 
 
+\begin{exercise}
+M(-1)   $\approx \answer[given,tolerance=0.1]{0.8}$
+\end{exercise}
 
 
 \begin{exercise}
-The dot tells us that which number is in the domain of T?
+M(0)   $\approx \answer[given,tolerance=0.1]{-0.56}$
+\end{exercise}
 
-\begin{selectAll}
-\choice{$-1$}
-\choice{$0$}
-\choice[correct]{$2$}
-\choice{$-2$}
-\end{selectAll}
 
+\begin{exercise}
+M(1)   $\approx \answer[given,tolerance=0.1]{-1.6}$
+\end{exercise}
+
+
+\begin{exercise}
+M(-2.25)   $\approx \answer[given,tolerance=0.1]{2.218}$
+\end{exercise}
+
+
+\begin{exercise}
+M(1.8)   $\approx \answer[given,tolerance=0.1]{-1.879}$
+\end{exercise}
+
+
+\begin{exercise}
+Solve   $ M\bigg( \answer[given,tolerance=0.1]{-0.78} \bigg) = 0.5$
 \end{exercise}
 
 
@@ -68,50 +93,26 @@ The dot tells us that which number is in the domain of T?
 
 
 
-\begin{exercise}
-The dot tells us that which number is a function value of T?
-
-\begin{selectAll}
-\choice[correct]{$-1$}
-\choice{$0$}
-\choice{$2$}
-\choice{$-2$}
-\end{selectAll}
-
-\end{exercise}
-
-
-
 
 \begin{exercise}
-The dot corresponds to which function notation? 
-
-\begin{selectAll}
-\choice{$w = 2$}
-\choice{$T(w) = -1$}
-\choice[correct]{$T(2) = -1$}
-\choice{$W(-1) = 2$}
-\end{selectAll}
-
+According to the graph, the domain of M is best described by which of the following intervals?
+\begin{multipleChoice}
+\choice{$[-4, 3]$}
+\choice[correct]{$[-4, 3)$}
+\choice{$(-4, 3]$}
+\choice{$(-4, 3)$}
+\end{multipleChoice}
 \end{exercise}
-
-
-
-
 
 \begin{exercise}
-The dot tells us that which number is in the range of T?
-
-\begin{selectAll}
-\choice[correct]{$-1$}
-\choice{$0$}
-\choice{$2$}
-\choice{$-2$}
-\end{selectAll}
-
+According to the graph, the range of M is best described by which of the following intervals?
+\begin{multipleChoice}
+\choice{$[2.5, -1.9]$}
+\choice{$(2.5, -1.9)$}
+\choice[correct]{$[-1.9, 2.5]$}
+\choice{$(-1.9, 2.5)$}
+\end{multipleChoice}
 \end{exercise}
-
-
 
 
 
