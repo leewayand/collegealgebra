@@ -37,13 +37,13 @@ The graph below represent function pairs for the function x.
           \addplot [textColor, very thin] plot coordinates {(0,-3) (0,3)}; % puts the axis back, axis on top clobbers our open holes
 
           \addplot [very thick, penColor, domain=(-4:-1)] {-0.08*(x+4)*(x+1)*(x-4)};
-          \addplot [very thick, penColor, domain=(0:4)] {0.4*x*(x-5)};
+          \addplot [very thick, penColor, domain=(0:4), ->] {0.4*x*(x-5)};
           
-          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(-4,1)};  %% closed hole    
-          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(1,1.6)};  %% closed hole   
-          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(4,1.6)};  %% closed hole        
+          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(-4,0)};  %% closed hole    
+          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(0,0)};  %% closed hole   
+          %\addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(4,1.6)};  %% closed hole        
           %\addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(3,1)};  %% closed hole        
-          \addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(1,-1.4)};  %% open hole
+          \addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(1,0)};  %% open hole
           
           %\node at  (axis cs:-3.3,-2) {A};
           %\node at  (axis cs:-2.2,0.3) {B};
