@@ -1,0 +1,116 @@
+\documentclass{ximera}
+
+\input{../../../preamble.tex}
+
+
+
+\outcome{Identify pairs in a relation.}
+
+
+\begin{document}
+
+
+
+
+
+
+
+
+\begin{definition}
+The graph below represent function pairs for the function g.
+\begin{image}
+\begin{tikzpicture}
+	\begin{axis}[
+            domain=-2:4,
+            width=5in,
+            height=3in,
+            grid=both,
+            axis lines =middle, xlabel=$p$, ylabel=$g$,
+            xtick={-4, -3, -2, -1, 1,2, 3, 4},
+            ytick={-4, -3, -2, -1, 1,2, 3, 4},
+            every axis y label/.style={at=(current axis.above origin),anchor=south},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west},
+            clip=false,
+            %axis on top,
+          ]
+          \addplot [textColor, very thin, domain=(-5:5)] {0}; % puts the axis back, axis on top clobbers our open holes
+          \addplot [textColor, very thin] plot coordinates {(0,-3) (0,3)}; % puts the axis back, axis on top clobbers our open holes
+
+          \addplot [very thick, penColor, domain=(-4:1)] {0.08*(x+4)*(x+1)*(x-4)+1};
+          \addplot [very thick, penColor, domain=(1:4)] {-0.4*x*(x-5)};
+          
+          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(-4,1)};  %% closed hole    
+          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(1,1.6)};  %% closed hole   
+          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(4,1.6)};  %% closed hole        
+          %\addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(3,1)};  %% closed hole        
+          \addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(1,-1.4)};  %% open hole
+          
+          %\node at  (axis cs:-3.3,-2) {A};
+          %\node at  (axis cs:-2.2,0.3) {B};
+          %\node at  (axis cs:1.3,-2) {C};
+          %\node at  (axis cs:3.2,1) {D};
+
+        \end{axis}
+\end{tikzpicture}
+\end{image}
+
+\end{definition}
+
+
+
+
+
+\begin{exercise}
+g(-4)   $\approx \answer[given,tolerance=0.1]{1}$
+\end{exercise}
+
+
+\begin{exercise}
+g(0)   $\approx \answer[given,tolerance=0.1]{-0.28}$
+\end{exercise}
+
+
+\begin{exercise}
+g(1)   $\approx \answer[given,tolerance=0.1]{1.6}$
+\end{exercise}
+
+
+\begin{exercise}
+g(2.25)   $\approx \answer[given,tolerance=0.1]{2.475}$
+\end{exercise}
+
+
+
+\begin{exercise}
+Solve   $ g\bigg( \answer[given,tolerance=0.1]{0.598} \bigg) = -1$
+\end{exercise}
+
+
+
+
+
+
+
+\begin{exercise}
+According to the graph, the domain of g is best described by which set?
+\begin{multipleChoice}
+\choice{$(-4, 1) \cup (1, 4)$}
+\choice{$[4, 1) \cup (1, 4]$}
+\choice{$(-4, 4]$}
+\choice[correct]{$[-4, 4]$}
+\end{multipleChoice}
+\end{exercise}
+
+\begin{exercise}
+According to the graph, the range of g is best described by which set?
+\begin{multipleChoice}
+\choice{$[-1.4, 2.5)$}
+\choice[correct]{$(-1.4, 2.5]$}
+\choice{$[1, 1]$}
+\choice{$(1, 2.5)$}
+\end{multipleChoice}
+\end{exercise}
+
+
+
+\end{document}
