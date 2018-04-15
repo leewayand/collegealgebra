@@ -17,7 +17,7 @@
 
 
 \begin{definition}
-The dot below represents a pair in the T function.
+The graph below is a graph of the function $R$.
 \begin{image}
 \begin{tikzpicture}
 	\begin{axis}[
@@ -35,8 +35,8 @@ The dot below represents a pair in the T function.
           \addplot [textColor, very thin, domain=(-5:5)] {0}; % puts the axis back, axis on top clobbers our open holes
           \addplot [textColor, very thin] plot coordinates {(0,-3) (0,3)}; % puts the axis back, axis on top clobbers our open holes
 
-         \addplot [very thick, penColor, domain=(-1:2)] {x^2};
-          %\addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(2,-1)};  %% closed hole          
+         \addplot [very thick, penColor, domain=(-1:2), ->] {x^2};
+          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(-1,1)};  %% closed hole          
           %\addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(1,0.1)};  %% open hole
 
         \end{axis}
