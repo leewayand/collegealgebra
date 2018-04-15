@@ -13,38 +13,51 @@
 
 
 
-
-
-
 \begin{definition}
-The graph below is a graph of the function $R$.
-\begin{image}
-\begin{tikzpicture}
-	\begin{axis}[
-            domain=-2:4,
-            width=5in,
-            height=3in,
-            axis lines =middle, xlabel=$w$, ylabel=$T$,
-            xtick={-4, -3, -2, -1, 1,2, 3, 4},
-            ytick={-4, -3, -2, -1, 1,2, 3, 4},
-            every axis y label/.style={at=(current axis.above origin),anchor=south},
-            every axis x label/.style={at=(current axis.right of origin),anchor=west},
-            clip=false,
-            %axis on top,
-          ]
-          \addplot [textColor, very thin, domain=(-5:5)] {0}; % puts the axis back, axis on top clobbers our open holes
-          \addplot [textColor, very thin] plot coordinates {(0,-3) (0,3)}; % puts the axis back, axis on top clobbers our open holes
-
-         \addplot [very thick, penColor, domain=(-1:2), ->] {x^2};
-          \addplot[color=penColor,fill=penColor,only marks,mark=*] coordinates{(-1,1)};  %% closed hole          
-          %\addplot[color=penColor,fill=background,only marks,mark=*] coordinates{(1,0.1)};  %% open hole
-
-        \end{axis}
-\end{tikzpicture}
-\end{image}
+Define the function $h$ by the formula $h(n) = -2(3n-5)^2+3$ with domain $(-\infty, \infty)$.
 
 \end{definition}
 
+
+
+\begin{exercise}
+The graph of $h(n)$ is best described by which of the following?
+
+\begin{multipleChoice}
+\choice{$Line$}
+\choice{$V-shaped$}
+\choice[correct]{$Parabola$}
+\choice{$Sideways Parabola$}
+\end{multipleChoice}
+
+\end{exercise}
+
+
+
+
+\begin{exercise}
+The graph of $h(n)$ includes what type of point?
+
+\begin{multipleChoice}
+\choice[correct]{$a highest point$}
+\choice{$a lowest point$}
+\choice{$neither$}
+\end{multipleChoice}
+
+\end{exercise}
+
+
+
+\begin{exercise}
+The graph of $h(n)$ opens up or down?
+
+\begin{multipleChoice}
+\choice{$up$}
+\choice[correct]{$down$}
+\choice{$neither$}
+\end{multipleChoice}
+
+\end{exercise}
 
 
 
@@ -52,17 +65,15 @@ The graph below is a graph of the function $R$.
 
 
 \begin{exercise}
-The implied domain from the graph is
+How many $n$-intercepts does the graph of $h(n)$ have?
 
-\begin{selectAll}
-\choice{$(-3, 4)$}
+\begin{multipleChoice}
 \choice{$0$}
+\choice{$1$}
 \choice[correct]{$2$}
-\choice{$-2$}
-\end{selectAll}
+\end{multipleChoice}
 
 \end{exercise}
-
 
 
 
