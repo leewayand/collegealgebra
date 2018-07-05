@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=latex 2017.5.23)  12 APR 2018 14:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=latex 2017.5.23)  15 APR 2018 16:29
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2077,17 +2077,21 @@ Overfull \hbox (10113.6573pt too wide) in paragraph at lines 193--11
 [1
 
 ] [2]
-l.43 --- TeX4ht warning --- Cannot determine size of graphic in "./solve_1-figu
-re0.svg" (no BoundingBox) ---
-l. 43 --- needs --- ./solve_1-figure0.svg ---
-LaTeX Font Info:    Try loading font information for U+msa on input line 58.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
+LaTeX Font Info:    Try loading font information for U+msa on input line 17.
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 58.
+LaTeX Font Info:    Try loading font information for U+msb on input line 17.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -2095,26 +2099,26 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+esint on input line 58.
+LaTeX Font Info:    Try loading font information for U+esint on input line 17.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 ) [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 118.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
  [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 118.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
 
 (./solve_1.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 118.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 118.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 61.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 61.
  ) 
 Here is how much of TeX's memory you used:
- 48746 strings out of 492996
- 1070764 string characters out of 6132730
- 1456204 words of memory out of 5000000
- 51276 multiletter control sequences out of 15000+600000
+ 48751 strings out of 492996
+ 1070875 string characters out of 6132730
+ 1456189 words of memory out of 5000000
+ 51281 multiletter control sequences out of 15000+600000
  5708 words of font info for 26 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,5n,122p,10882b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on solve_1.dvi (4 pages, 29644 bytes).
+Output written on solve_1.dvi (4 pages, 28332 bytes).

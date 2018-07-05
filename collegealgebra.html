@@ -27,6 +27,10 @@
 \newcommand {\logo }[1]{\ifx \@onlypreamble \@notprerr \ClassError {xourse}{logo can only be used in the preamble}{Move your logo command to the preamble}\else \IfFileExists {##1}{\gdef \xourse@logo {##1}}{\ClassError {xourse}{logo file does not exist}{To use logo,make sure that the referenced image file exists}}\fi }
 \newcommand {\todo }[0]{}
 \newcommand {\mooculus }[0]{\textsf {\textbf {MOOC}\textnormal {\textsf {ULUS}}}}
+\newcommand {\firsthline }[0]{\multicolumn 1c{\global \backup@length \ht \@arstrutbox \global \advance \backup@length \dp \@arstrutbox \global \advance \backup@length \arrayrulewidth \raise \extratabsurround \copy \@arstrutbox }\\[-\backup@length ]\hline }
+\newcommand {\lasthline }[0]{\hline \multicolumn 1c{\global \backup@length 2\ht \@arstrutbox \global \advance \backup@length 2\dp \@arstrutbox \global \advance \backup@length \arrayrulewidth }\\[-\backup@length ]\multicolumn 1c{\lower \extratabsurround \copy \@arstrutbox }}
+\newcommand {\reserved@a }[0]{\ifx \reserved@a \hline \vskip \doublerulesep \vskip -\arrayrulewidth \fi \ifnum 0=‘{\fi }}
+\newcommand {\@xhline }[0]{\ifx \reserved@a \hline \vskip \doublerulesep \fi \ifnum 0=‘{\fi }}
 \newcommand {\npfourdigitsep }[0]{\nprt@numsepfourtrue }
 \newcommand {\npfourdigitnosep }[0]{\nprt@numsepfourfalse }
 \newcommand {\npaddmissingzero }[0]{\nprt@addmissingzerotrue }
@@ -94,13 +98,6 @@
 \newcommand {\CountToken }[1]{\c@pgfmath@countb 0 \expandafter \C@untToken ##1\@nil }
 \newcommand {\C@untToken }[0]{\afterassignment \C@untT@ken \let \CurrT@ken = }
 \newcommand {\C@untT@ken }[0]{\ifx \CurrT@ken \@nil \else \advance \c@pgfmath@countb by1 \expandafter \C@untToken \fi }
-\newcommand {\CancelColor }[0]{}
-\newcommand {\cancelto }[0]{1}
-\newcommand {\cancel  }[1]{\ifmmode \mathpalette {\@cancel {\@can@slash {}}}{##1}\else \@cancel {\@can@slash {}}\hbox {##1}\fi }
-\newcommand {\bcancel  }[1]{\ifmmode \mathpalette {\@cancel {\@can@slash {-}}}{##1}\else \@cancel {\@can@slash {-}}\hbox {##1}\fi }
-\newcommand {\xcancel  }[1]{\ifmmode \mathpalette {\@cancel {\@can@slash {+}\@can@slash {-}}}{##1}\else \@cancel {\@can@slash {+}\@can@slash {-}}\hbox {##1}\fi }
-\newcommand {\@cancel }[3]{\OriginalPictureCmds \@begin@tempboxa \hbox {\m@th $##2{##3}$}\dimen@ \height \setbox \@tempboxa \hbox {$\m@th \vcenter {\box \@tempboxa }$}\advance \dimen@ -\height \unitlength \p@ \canc@thinlines {\/\raise \dimen@ \hbox {\ooalign {##1\hfil \box \@tempboxa \hfil \cr }}}\@end@tempboxa }
-\newcommand {\@cancelto }[4]{\OriginalPictureCmds \@begin@tempboxa \hbox {\m@th $##3{##4}$}\dimen@ \width \@min@pt \dimen@ 2\@min@pt \totalheight 4 \ifdim \totalheight &#x003C;\dimen@ \@tempcnta \totalheight \multiply \@tempcnta 5 \divide \@tempcnta \dimen@ \@tempdimb 3\p@ \advance \dimen@ \ifcase \@tempcnta 5\or 5\or 4\or 3\else 2\fi \p@ \@min@pt \dimen@ 9\advance \dimen@ \p@ \edef \@tempa {\ifcase \@tempcnta 5441\or 5441\or 5421\or 4443\else 3611\fi {\strip@pt \dimen@ }{\strip@pt \@tempdimb }}\def \@tempb {Cancel ##4 to ##2; case wide }\else \advance \totalheight 3\p@ \@tempcnta \dimen@ \multiply \@tempcnta 5 \divide \@tempcnta \totalheight \advance \totalheight 3\p@ \dimen@ \ifcase \@tempcnta .25\or .25\or .5\or .75\else 1\fi \totalheight \@tempdimb \ifcase \@tempcnta .8\or .8\or 1.2\or 1.5\else 2\fi \p@ \edef \@tempa {\ifcase \@tempcnta 0814\or 0814\or 1812\or 2734\else 3611\fi {\strip@pt \dimen@ }{\strip@pt \@tempdimb }}\fi \dimen@ \height \setbox \@tempboxa \hbox {$\m@th \vcenter {\box \@tempboxa }$}\advance \dimen@ -\height \unitlength \p@ \canc@thinlines {\/\raise \dimen@ \hbox {\expandafter \canto@vector \@tempa {##1}{##2}}}\@end@tempboxa }
 \newcommand {\RLmulticolcolumns }[0]{\let \mc@align@columns \RL@column@boxes }
 \newcommand {\LRmulticolcolumns }[0]{\let \mc@align@columns \LR@column@boxes }
 \newcommand {\RR }[0]{\mathbb R}
@@ -164,7 +161,6 @@
 \newcommand {\vector }[1]{\left \langle ##1\right \rangle }
 \newcommand {\sectionOutcomes }[0]{}
 \newcommand {\reserved@a }[2]{}
-\newcommand {\reserved@a }[2]{}
 \newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
 \newcommand {\reserved@a }[1]{}
 \newcommand {\reserved@a }[2]{}
@@ -174,9 +170,6 @@
 \newcommand {\epstopdfsetup }[0]{\setkeys {ETE}}
 \newcommand {\epstopdfcall }[1]{\ifETE@InsideSetfile \expandafter \@firstoftwo \else \expandafter \@secondoftwo \fi {‘##1}{\Gin@base \Gin@ext }}
 \newcommand {\epstopdfDeclareGraphicsRule }[4]{\ifx \\##4\\\@PackageError {epstopdf-base}{Conversion command is missing}\@ehc \else \begingroup \@ifundefined {Gin@rule@##1}{}{\@PackageInfo {epstopdf-base}{Redefining graphics rule for ‘##1’}}\endgroup \@namedef {Gin@rule@##1}####1{{##2}{##3}{\epstopdfcall {##4}}}\fi }
-\newcommand {\mdf@patchamsthm }[0]{\let \mdf@deferred@thm@head \deferred@thm@head \pretocmd {\deferred@thm@head }{\@inlabelfalse }{\mdf@PackageInfo {mdframed detected package amsthm
- changed the theorem header of amsthm\MessageBreak }}{\mdf@PackageError {mdframed detected package amsthm
- changed the theorem header of amsthm failed\MessageBreak }}}
 \newcommand {\GetTitleStringSetup }[0]{\setkeys {gettitlestring}}
 \newcommand {\GetTitleString }[0]{\ifGTS@expand \expandafter \GetTitleStringExpand \else \expandafter \GetTitleStringNonExpand \fi }
 \newcommand {\GetTitleStringExpand }[1]{\def \GetTitleStringResult {##1}\begingroup \GTS@DisablePredefinedCmds \GTS@DisableHook \edef \x {\endgroup \noexpand \def \noexpand \GetTitleStringResult {\GetTitleStringResult }}\x }
@@ -194,7 +187,6 @@
 \newcommand {\pageref  }[0]{\@ifstar \@pagerefstar \T@pageref }
 \newcommand {\nameref  }[0]{\@ifstar \@namerefstar \T@nameref }
 \newcommand {\reserved@a }[2]{}
-\newcommand {\reserved@a }[2]{}
 \newcommand {\reserved@a }[0]{\AtBeginDocument }
 \newcommand {\reserved@a }[1]{}
 \newcommand {\reserved@a }[2]{}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </script><script type="text/javascript"> 
@@ -208,7 +200,7 @@
 </h3></a> <a class="activity card section" href="ximeraTutorial/howIsMyWorkScored" data-options="">ximeraTutorial/howIsMyWorkScored.tex<h2>How is my work scored?</h2><h3>We explain how your work is scored.
 </h3></a>
 <h1 id="part1" class="card part">Book 1 : Relations</h1>
-<a class="activity card chapter" href="book1/B1_titlePage" data-options="">book1/B1_titlePage.tex<h2>Book 1</h2><h3>Main Ideas
+<a class="activity card chapter" href="book1/B1_titlePage" data-options="">book1/B1_titlePage.tex<h2>Book 1</h2><h3>Main Ideas 3
 </h3></a> <a class="activity card chapter" href="book1/B1_Ch1_Preview/preview_1" data-options="">book1/B1_Ch1_Preview/preview_1.tex<h2>Preview of Chapter 1</h2><h3>
 </h3></a> <a class="activity card chapter" href="book1/B1_Ch1_CA/overview" data-options="">book1/B1_Ch1_CA/overview.tex<h2>Preview College Algebra</h2><h3>
 </h3></a>

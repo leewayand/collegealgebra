@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=latex 2017.5.23)  18 JAN 2018 11:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=latex 2017.5.23)  21 MAR 2018 19:48
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -12,7 +12,7 @@ documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
 .b.c.\input  howToUseXimera.tex
 (./howToUseXimera.tex
 (/Users/lwayand/Library/texmf/tex/latex/ximeraLatex/ximera.cls
-Document Class: ximera 2016/08/17 Version 1.31 by Bart Snapp
+Document Class: ximera 2016/08/17 Version 1.33 by Bart Snapp
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/size10.clo
@@ -1111,21 +1111,15 @@ Package: tex4ht
 \c@summary=\count296
 \c@template=\count297
 \c@warning=\count298
+\c@Iteration@probCnt=\count299
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/tex4ht/usepackage.4ht)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/forloop/forloop.sty
 Package: forloop 2006/09/18 v3.0 For Loops for LaTeX
 )
-\c@Iteration1=\count299
-\c@RndQuant=\count300
-\c@Temp@Hold=\count301
-\c@Temp@RandMe=\count302
-\c@shuffle@maxCount=\count303
-\c@shuffle@count=\count304
-\c@shuffle@trackProblem=\count305
-\c@shuffle@desiredProblems=\count306
-\c@problem=\count307
-\c@problemType=\count308
+\c@problem@Depth=\count300
+\c@hintLevel=\count301
+\c@problem=\count302
 )
 (/Users/lwayand/Library/texmf/tex/latex/ximeraLatex/ximera.cfg
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/verbatim.sty
@@ -1147,7 +1141,7 @@ version 2017-05-09-09:21
 version 2016-07-18-16:08
 
 --- needs --- tex4ht howToUseXimera ---
-\tmp:cnt=\count309
+\tmp:cnt=\count303
 \openout15 = `howToUseXimera.tmp'.
 
 (./howToUseXimera.tmp)
@@ -1366,11 +1360,11 @@ version 2014-01-26-09:44
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2016/05/14 v2.6a Micro-typographical refinements (RS)
 \MT@toks=\toks58
-\MT@count=\count310
+\MT@count=\count304
 LaTeX Info: Redefining \textls on input line 774.
 \MT@outer@kern=\dimen282
 LaTeX Info: Redefining \textmicrotypecontext on input line 1310.
-\MT@listname@count=\count311
+\MT@listname@count=\count305
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2016/05/14 v2.6a Definitions specific to pdftex (RS)
@@ -1384,9 +1378,35 @@ Package microtype Info: Loading configuration file microtype.cfg.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2016/05/14 v2.6a microtype main configuration file (RS)
 ))
-\c@identification=\count312
-\c@choiceId=\count313
+\c@identification=\count306
 
+
+/Users/lwayand/Library/texmf/tex/latex/ximeraLatex/ximera.4ht:51: LaTeX Error: 
+Environment xarmaBoost undefined in `ximera.cfg'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 ...figureQuestionEnv{xarmaBoost}{xarma-boost}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/Users/lwayand/Library/texmf/tex/latex/ximeraLatex/ximera.4ht:57: LaTeX Error: 
+Environment shuffle undefined in `ximera.cfg'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 \ConfigureQuestionEnv{shuffle}{shuffle}
+                                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\c@choiceId=\count307
 /Users/lwayand/Library/texmf/tex/latex/ximeraLatex/ximera.4ht:223: Illegal para
 meter number in definition of \desmos.
 <to be read again> 
@@ -1396,6 +1416,19 @@ l.223 ...not support embedded elements.</iframe>}}
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
+
+
+/Users/lwayand/Library/texmf/tex/latex/ximeraLatex/ximera.4ht:266: LaTeX Error:
+ Environment sagesilent undefined in `ximera.cfg'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.266 \renewenvironment{sagesilent}
+                                   {\NoFonts}{\EndNoFonts}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2017-05-09-09:20
@@ -1616,7 +1649,7 @@ version 2017-03-30-16:04
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/tex4ht/mdframed.4ht
 version 2017-04-28-08:47
-\mdf:env:cnt=\count314
+\mdf:env:cnt=\count308
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2017-05-09-09:20
@@ -1633,7 +1666,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count315
+\c@section@level=\count309
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/tex4ht/nameref.4ht
 version 2016-12-26-14:53
@@ -1687,34 +1720,31 @@ runsystem(sed -i "s/##\\([0-9]\\)/#\\1/g" howToUseXimera.jax)...executed.
  (./howToUseXimera.aux)
 \openout1 = `howToUseXimera.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
 
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.14}).
 
-Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
-ick labels; missing features). Consider writing \pgfplotsset{compat=1.14} into 
-your preamble.
- on input line 125.
-
-\c@lstlisting=\count316
+\c@lstlisting=\count310
 \AtBeginShipoutBox=\box66
-Package hyperref Info: Link coloring ON on input line 125.
-LaTeX Info: Redefining \ref on input line 125.
-LaTeX Info: Redefining \pageref on input line 125.
-LaTeX Info: Redefining \nameref on input line 125.
-LaTeX Info: Redefining \microtypecontext on input line 125.
+Package hyperref Info: Link coloring ON on input line 121.
+LaTeX Info: Redefining \ref on input line 121.
+LaTeX Info: Redefining \pageref on input line 121.
+LaTeX Info: Redefining \nameref on input line 121.
+LaTeX Info: Redefining \microtypecontext on input line 121.
 Package microtype Info: Generating DVI output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1726,8 +1756,8 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-/Users/lwayand/Library/texmf/tex/latex/ximeraLatex/ximera.cfg:169: Extra \fi.
-l.169 \fi
+/Users/lwayand/Library/texmf/tex/latex/ximeraLatex/ximera.cfg:165: Extra \fi.
+l.165 \fi
          
 I'm ignoring this; it doesn't match any \if.
 
@@ -1795,12 +1825,12 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 194.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 194.
  ) 
 Here is how much of TeX's memory you used:
- 42935 strings out of 492996
- 934084 string characters out of 6132730
- 1243700 words of memory out of 5000000
- 45681 multiletter control sequences out of 15000+600000
+ 42910 strings out of 492996
+ 933649 string characters out of 6132730
+ 1246980 words of memory out of 5000000
+ 45658 multiletter control sequences out of 15000+600000
  5815 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,6n,98p,10889b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81i,6n,122p,10889b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on howToUseXimera.dvi (4 pages, 19952 bytes).
