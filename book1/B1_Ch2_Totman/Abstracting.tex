@@ -1,0 +1,194 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+\title{Abstracting}
+
+\begin{document}
+
+\begin{abstract}
+%Stuff can go here later if we want!
+\end{abstract}
+
+\maketitle
+
+\begin{sectionOutcomes}
+
+After completing this section, students should understand relations and functions as mathematical tools. 
+
+\begin{itemize}
+\item Students .
+\item Students .
+\end{itemize}
+
+\end{sectionOutcomes}
+
+
+
+
+\textbf{Abstracting} \\
+In a family tree, people are connected in many ways.  We have chosen one here. Once you pick a connection rule to follow, then you can list valid pairs of persons - pairs in the relation.  You can also pick pairs that are not valid, are not in the relation.  But, in the end, all we are doing is citing a connection between two sets of things.  In the Totman case, the two sets are both the family members. Other situations might also have this same structure. Noticing this same relational structure with other things is called abstracting.
+
+You might imagine replacing all of the people in the Totman diagram with tomato plants.  The dashed line segments might indicate grafting different plants, while solid might mean a plant grown from seeds resulting from the graft. 
+
+Now we have different situations with similar characteristics. Our mathematics is describing this shared structure. Other situations we investigate with our science might share this common relationship.  In this way our mathematics allows us to see how different situations might share common characteristics. Any thoughts we develop about one could then easily be translated to the other situations. We call this \textbf{abstracting}.
+
+We abstract every day.  We see common connections, borrow language, and make analogies to help others understand the structure we see. We see the relation structure in just about everything, from family trees, to growing plants, to football teams. 
+
+
+
+
+
+\begin{example}
+\quad \\
+\textbf{Try It Yourself}
+
+\begin{image}
+\includegraphics{pics/Chris_Cory_arrow.png}
+\end{image}
+
+Is (Chris, Cory) $\in$ Totman Relation?
+\begin{multipleChoice}
+\choice{Yes}
+\choice[correct]{No}
+\end{multipleChoice}
+\begin{feedback}
+The only path from Cory to Chris crosses over the full dashed line segment at the marriage of Meagan and Chris.
+\end{feedback}
+
+
+\end{example}
+\quad \\
+
+
+
+
+\begin{example}
+\quad \\
+\textbf{Try It Yourself}
+
+\begin{image}
+\includegraphics{pics/Jeff_arrow.png}
+\end{image}
+
+If (Jeff, person) $\in$ Totman Relation, then who could the person be?
+\begin{multipleChoice}
+\choice{Carl}
+\choice{Tony}
+\choice[correct]{Paul}
+\choice{Diane}
+\end{multipleChoice}
+\begin{feedback}
+The path to Paul is the only one of the four that doesn't cross over a full dashed line segment.
+\end{feedback}
+
+
+\end{example}
+\quad \\
+
+
+
+
+
+\begin{example} 
+\quad \\
+Let's consider Franklin High School's swim team. There are 7 students on the team.
+
+
+
+
+Sets: students and students.
+Relation: two students are related to each other if they are the same age. We'll call this relation SameAge.
+
+Mathematics: The ordered pair (person 1, person 2) is in SameAge if person 2 is the same age as person 1. 
+
+(Sally, Sarah) is an ordered pair in SameAge.  (Taja, Dawn) is not an ordered pair in SameAge.
+
+Is SameAge reflexive? Yes. A person is the same age as himself or herself. The pair (person1, person1) is \textbf{ALWAYS} in SameAge.
+
+Is SameAge symmetric? Yes. If (person1, person2) $\in$ SameAge, then person1 and person2 are the same age, which means that  (person1, person2) $\in$ SameAge - \textbf{ALWAYS}.
+
+Is SameAge transitive? Yes. (person1, person2) $\in$ SameAge and (person2, person3) $\in$ SameAge, than (person1, person3) $\in$ SameAge. \textbf{ALWAYS}.   
+
+
+
+
+\end{example}
+\quad \\
+
+
+
+
+
+\begin{example} 
+\quad \\
+Let's consider Franklin High School's swim team. There are 7 students on the team. 
+
+
+
+
+
+
+Sets: students and students.
+Relation: students are older and younger than each other.
+Mathematics: describe this structure with ordered pairs for a relation called Older. The ordered pair (person 1, person 2) is in Older if person 2 is older than person 1. 
+
+(Sally, Dawn) is an ordered pair in Older.  (Taja, Sarah) is not an ordered pair in Older.
+
+Is Older reflexive? No. A person is not older than himself or herself. The pair (person1, person1) cannot be in Older.
+
+Is Older symmetric? No. (Sally, Dawn) $\in$ Older, but (Dawn, Sally) is not since Sally is not older than Dawn.
+
+Is Older transitive? Yes. (person1, person2) $\in$ Older and (person2, person3) $\in$ Older, than (person1, person3) $\in$ Older. \textbf{ALWAYS}.                                                                                         
+                    
+
+
+
+
+\end{example}
+\quad \\                                                                                     
+
+
+
+                                                                                                            
+Let's change the Totman connection to be "a relative". Two people in the Totman family tree are relatives of each other if there is a path which includes AT MOST one full dashed line segment. It can include any number of solid or half-dashed pieces. Let's call this the Totman-Rel relation.
+
+
+
+\begin{exercise}
+\quad \\
+\begin{center}
+\begin{image}
+\includegraphics{Totman_Family_Tree.png}
+\end{image}
+\end{center}
+\begin{enumerate}
+\item Is (Ashley, Victoria) $\in$ Totman-Rel ? 
+\item Is (Ashley, sCrista) $\in$ Totman-Rel ?
+\item Is (Ashley, Kevin) $\in$ Totman-Rel ?
+\item Is (Ashley, Alex) in the  Totman-Rel ?
+\item Is (Ashley, Zach) in the  Totman-Rel ?
+\item Does the Totman-Rel relation contain (Ashley, Quinn) ?
+\item Does the Totman-Rel relation contain (Ashley, Brandi) ?
+\item Is every pair in the Totman relation also in the Totman-Rel relation?
+\item Is the Totman-Rel relation symmetric?
+\item Does the Totman or the Totman-Rel relation contain more pairs?
+\end{enumerate}
+
+\end{exercise}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
