@@ -53,7 +53,12 @@ A player-team pair will be a member of the \textbf{Q-Team} relation if that play
 
 
 \begin{dialogue}
-\item[QUESTION:] Is Q-Team reflexive? \\\item[ANSWER:]This doesn?t even make any sense.  You can?t have a pair like (Johnny Unitas, Johnny Unitas). You can?t have a pair like (Detroit Lions, Detroit Lions).  The pairs consist of one player and one team. So, no. Q-Team is not reflexive.\end{dialogue}\textbf{QUESTION:}Is Q-Team symmetric?\\If (Joe Montana, San Francisco 49ers) $\in$ Q-Team, then is it automatic that (San Francisco 49ers, Joe Montana) $\in$ Q-Team\\\textbf{ANSWER:} Hopefully not. \\In the Totman relation, the pairs were chosen from the same set.  So, when they were reversed, the new pair still made sense.  But, it is going to get confusing to allow pairs to be written in any order for other relations. We should add some new notation rules to help us with this.
+\item[QUESTION:] Is Q-Team reflexive? \\\item[ANSWER:] This doesn?t even make any sense.  You can?t have a pair like (Johnny Unitas, Johnny Unitas). You can?t have a pair like (Detroit Lions, Detroit Lions).  The pairs consist of one player and one team. So, no. Q-Team is not reflexive.\end{dialogue}
+
+
+\begin{dialogue}\item[QUESTION:] Is Q-Team symmetric?\\If (Joe Montana, San Francisco 49ers) $\in$ Q-Team, then is it automatic that (San Francisco 49ers, Joe Montana) $\in$ Q-Team\\\item[ANSWER:] Hopefully not. \\In the Totman relation, the pairs were chosen from the same set.  So, when they were reversed, the new pair still made sense.  But, it is going to get confusing to allow pairs to be written in any order for other relations. We should add some new notation rules to help us with this.
+\end{dialogue}
+
 
 
 \textbf{New Rule} \\A relation is a bunch of pairs representing a connection between sets.  The pairs are made by taking one item from one set and a second item from another set. In some relations, both sets might be the same.  The new rule says stick with one order.  Just say it up front and then stick with it.  That will alleviate a lot of confusion.
@@ -64,7 +69,7 @@ A player-team pair will be a member of the \textbf{Q-Team} relation if that play
 We'll call the first set of things the \textbf{domain} of the relation. \\We'll call the second set of things the \textbf{codomain} of the relation.  \\Pairs will always be written as \textbf{(domain item, codomain item)}.
 \end{remark}
 
-
+\quad \\
 
 
 \textbf{The Q-Team Relation : Redesign} \\Using our new rule and new words we can set some communication ground rules for the Q-Team relation.
@@ -77,11 +82,11 @@ We'll call the first set of things the \textbf{domain} of the relation. \\We'll
 
 
 With our new rule, we can see that Q-Team is not symmetric, because Q-Team doesn?t include any pairs of the form ?(team, quarterback). It is automatically non-symmetric.
-This Q-Team relation is BIG! The NFL is old. There are many NFL teams that have had at least 50 quarterbacks in their history.  There have been more than 30 teams.  There could be over 1000 pairs.  And, players switch teams often.  This relation is going to be too big for us to sift through.  Let?s make it smaller.
-Let?s shrink (restrict) the domain down to just quarterbacks that played for the Cleveland Browns. The codomain can remain as all NFL teams, since quarterbacks for Cleveland may also have been quarterbacks for other teams.
-Wait. Let?s set a date of "before 2016". Otherwise, this book is going to be incorrect real quick.
+This Q-Team relation is BIG! The NFL is old. There are many NFL teams that have had at least 50 quarterbacks in their history.  There have been more than 30 teams.  There could be over 1000 pairs.  And, players switch teams often.  This relation is going to be too big for us to sift through.  Let's make it smaller.
+Let's shrink (restrict) the domain down to just quarterbacks that played for the Cleveland Browns. The codomain can remain as all NFL teams, since quarterbacks for Cleveland may also have been quarterbacks for other teams.
+Wait. Let's set a date of "before 2016". Otherwise, this book is going to be incorrect real quick.
 
-
+\quad \\
 
 \textbf{The Q-CLE Relation} \\Using our new rule and new words we can set some ground rules for the Q-CLE relation.
 \begin{itemize}\item The domain of the Q-CLE relation is every quarterback who was on a Cleveland Browns roster at some time in NFL history.\item The codomain of the Q-CLE relation is every team in NFL history.\item The pairs look like (quarterback, team).  \item A pair is in the Q-CLE relation if that person really was a quarterback for that team.
@@ -99,6 +104,41 @@ Derek Anderson and Trent Dilfer played quarterback for the Cleveland Browns, whi
 \end{example}
 
 
+
+
+
+\begin{problem} \wordChoice{\choice[correct]{True} \choice{False}} (Kelly Holcomb, Cleveland Browns) $\in$ Q-CLE
+\begin{feedback}
+Kelly Holcomb played quarterback for the Cleveland Browns at some point in NFL history.
+\end{feedback}
+\end{problem}
+
+
+
+\begin{problem} \wordChoice{\choice{Yes} \choice[correct]{No}} (Dan Marino, Miami Dolphins) $\in$ Q-CLE
+\begin{feedback}
+Dan Marino did quarterback for the Miami Dolphins, but the domain of Q-CLE is players who quarterbacked for the Cleveland Browns.  Dan Marino never did. 
+\end{feedback}
+\end{problem}
+
+
+
+
+\begin{problem} \wordChoice{\choice[correct]{Yes} \choice{No}} (Don Strock, Miami Dolphins) $\in$ Q-CLE
+\begin{feedback}
+Don Strock played quarterback for the Cleveland Browns at some point in NFL history. He also played quarterback for the Miami Dolphins.
+\end{feedback}
+\end{problem}
+
+
+
+\begin{problem} \wordChoice{\choice[correct]{Yes} \choice{No}} (Tom Flick, New York Jets) $\in$ Q-CLE
+\begin{feedback}
+Tom Flick played quarterback for the Cleveland Browns at some point in NFL history. He also played quarterback for the New York Jets.\end{feedback}
+\end{problem}
+
+
+Ok, you are forgiven if your knowledge of NFL history let you down there.
 
 
 
