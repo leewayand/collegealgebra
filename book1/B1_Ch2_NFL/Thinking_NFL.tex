@@ -171,13 +171,17 @@ Tables are nice for small data sets, but what happens when the relations are big
 
 \begin{fact}
 
-If (Bill Nelson, PIT) $\in$ Q-CLE, then what other pair has to be in Q-CLE?
+If (Bill Nelson, PIT) $\in$ Q-CLE, then the pair (Bill Nelson, CLE) also has to be in Q-CLE, because every item in the domain played for the Cleveland Browns.
+
+\quad \\
+
+If (Brian Sipe, CLE) $\in$ Q-CLE, is the only pair in Q-CLE for Brian Sipe, then Brian Sipe played for no other NFL teams.  He would be in a pair for each team he played for. Therefore, he played for no other teams?
 
 
 
-\begin{problem} \wordChoice{\choice[correct]{True} \choice{False}} (Kelly Holcomb, Cleveland Browns) $\in$ Q-CLE
+\begin{problem} How many quarterbacks played only for the Cleveland Browns and no other NFL teams? \answer{13}
 \begin{feedback}
-Kelly Holcomb played quarterback for the Cleveland Browns at some point in NFL history.
+Look for quarterbacks in the table, where their CLE pair is the only pair.
 \end{feedback}
 \end{problem}
 
@@ -185,6 +189,30 @@ Kelly Holcomb played quarterback for the Cleveland Browns at some point in NFL h
 \end{fact}
 
 
+\quad \\
+
+
+\begin{example}
+Let's create a new relation called \textbf{Q-CLE-#}. This relation has the same domain as Q-CLE, players who were Cleveland Browns quarterbacks. This time the codomain will be whole numbers. A player is paired with the total number of NFL teams he played for.For example (Brian Sipe, 1) $\in$ Q-CLE-#, since he only played for the Cleveland Browns.
+
+
+\begin{problem} What \textit{number} makes (Kelly Holcomb, \textit{number}) a pair in Q-CLE-# ? \answer{6}
+\begin{feedback}
+Keely Holcomb played on 6 NFL teams.
+\end{feedback}
+\end{problem}
+
+
+\begin{multipleChoice} Are they any pairs of the form (player, 0) in Q-CLE-# ?
+\item{Yes}
+\item[correct]{No}
+\begin{feedback}
+No. Each item in the domain played for the Cleveland Browns, which means the number has to be at least 1.
+\end{feedback}
+\end{multipleChoice}
+
+
+\end{example}
 
 
 
