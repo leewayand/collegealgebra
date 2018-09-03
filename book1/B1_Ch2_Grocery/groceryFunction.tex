@@ -23,4 +23,91 @@ After completing this section, students should understand relations and function
 
 \end{sectionOutcomes}
 
+
+
+
+\[
+\begin{array}{|l|l|l|}
+\hline
+(102707849467, 1.24) & (151603090297, 1.28) & (147882057258, 1.33) \\\hline
+(121219574901, 3.95) & (196997564303, 4.61) & (120984686834, 1.39) \\\hline
+(192107524489, 3.06) & (116532522722, 5.46) & (190132246907, 1.24) \\\hline
+(105853328761, 1.33) & (185066339518, 1.25) & (178355581117, 4.81) \\\hline 
+(139647551818, 0.79) & (182604889507, 2.07) & (163639788196, 0.95) \\\hline 
+(151593345667, 2.07) & (173630558604, 1.24) & (141821520319, 1.25) \\\hline 
+(142144767669, 3.38) & (187266863018, 2.63) & (146494777598, 1.33) \\\hline 
+(155152532584, 3.06) & (159664504967, 0.79) & (137707844901, 3.67) \\\hline 
+(116506724164, 2.17) & (139411323037, 1.71) & (127419334209, 1.90) \\\hline 
+(120957405055, 4.66) & (133860480889, 1.39) & (145242561846, 0.79) \\\hline 
+(105756538007, 0.95) & (162440197320, 1.46) & (198053092474, 1.39) \\\hline 
+(130874077288, 1.39) & (136348437875, 2.46) & (147817810438, 4.66) \\\hline 
+(133727371104, 0.79) & (182108962832, 6.79) & (158625940456, 2.68) \\\hline 
+(100883301040, 3.07) & (103811801019, 2.07) & (185611457154, 3.06) \\\hline 
+(184348593986, 1.33) & (135757760868, 2.40) & (187006291505, 3.38) \\\hline 
+(143404118258, 5.94) & (185248264403, 0.79) & (116047586435, 1.39) \\\hline 
+(189778504216, 1.25) & (187266173278, 1.66) &    \\\hline
+\end{array}
+\]
+
+
+Or,
+
+\begin{image}
+\includegraphics{pics/Product_Price_Map.png}
+\end{image}
+
+
+
+
+\begin{dialogue}
+\item[QUESTION:] How many pairs are there in the Product-Price relation that look like (number, 2.07) ? \\
+\item[ANSWER:] 2. number could be 182604889507 or 103811801019. \\
+\end{dialogue}
+
+\begin{dialogue}
+\item[QUESTION:] Is it possible that a particular number is in more than one pair in the Product-Price relation? \\
+\item[ANSWER:] No. Products only have one price.  Shoppers get very anxious at the cash register when this expectation breaks down. \\
+\end{dialogue}
+
+\begin{dialogue}
+\item[QUESTION:] Is it possible that a particular price occurs in more than one pair in the Product-Price relation? \\
+\item[ANSWER:] Yes. Two different products can have the same price.  We expect that to happen. \\
+\end{dialogue}
+
+Take a look at the map of the Product-Price relation again.  While the right side is a bit of a mess, the left side if very clean and orderly: one number, one line.  This goes back to a previous question, in which we decided that each domain GTIN number is in only one pair
+
+
+
+This is nice. 
+
+We like this.\textbf{Simplifying More} \\Let?s only look at relations where each domain item occurs in exactly one pair. These types of relations are easier to examine and questions about them are easier to answer.  We can certainly return to studying all relations at a later time, but for now let?s focus on these cleaner types of relations.  
+These cleaner types of relations are special, so they deserve a special name.
+
+
+\begin{center}
+FUNCTIONS
+\end{center}
+
+\begin{definition}
+A \textbf{function} is a relation in which each domain item occurs in exactly one pair.
+\end{definition}
+
+
+The Product-Price relation is now also a function, because it is a special relation where each domain product is paired with exactly one codomain price.
+It doesn?t go the other way, though, as the Product-Price function illustrates. Each domain product is in exactly one pair, however, a codomain price might be in multiple pairs.  We only cleaned up one side.  Maybe we?ll have to clean up the other side later, but for now we?ll just clean up the domain side.
+
+\begin{itemize}
+\item The Totman relation is not a function, because there are domain people appearing in multiple pairs.
+\item Q-CLE is not a function, because there are players in the domain appearing in multiple pairs.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
 \end{document}
