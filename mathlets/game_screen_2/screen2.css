@@ -1,0 +1,352 @@
+
+html, body { 	
+
+}
+
+
+
+
+.leftColumn {
+	background-color: #000080;
+}
+
+.scoreImg {
+	height: auto; 
+	width: auto;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.scoreTitle {
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 50%;
+	text-align: center;
+}
+
+
+
+
+
+
+.middleColumn {
+	background-color: #000080;
+}
+
+
+.middleTop {
+	display: flex;
+	background-color: #999999;
+	height: 10%;
+	border-radius: 10px;
+}
+
+.middleMiddle {
+	display: flex;
+	background-color: #000080;
+	height: 75%;
+}
+
+.middleFeedbackBottom {
+	display: flex;
+	background-color: #999999;
+	height: 15%;
+	border-radius: 10px;
+}
+
+.middleFeedbackGreen {
+	background-color: #00aa00;
+}
+
+.middleFeedbackRed {
+	background-color: #aa0000;
+}
+
+
+.middleHeaderText {
+	width: 100%;
+	align-self: center;
+	text-align: center;
+}
+
+.middleFeedbackText {
+	width: 100%;
+	align-self: center;
+	text-align: center;
+}
+
+
+.questionArea {
+	display: flex;
+	background-color: #ffffff;
+	align-self: center;
+	justify-content: center;
+	height: 90%;
+	width: 100%;
+	text-align: center;
+}
+
+
+
+.questionBox {
+	background-color: #aa00aa;
+	align-self: center;
+	text-align: center;
+}
+
+
+
+
+
+
+.rightColumn {
+background-color: #000080;
+}
+
+.rightTopHeader {
+	display: flex;
+	height: 5%;
+}
+
+
+
+
+.rightInstructions {
+	display: flex;
+	background-color: #999999;
+	height: 20%;
+	border-radius: 10px;
+}
+
+.rightMiddleSeparator {
+	height: 5%;
+}
+
+.rightResponses {
+	background-color: #000080;
+	height: 65%;
+	border-radius: 10px;
+}
+
+.rightBottomFooter {
+	display: flex;
+	height: 5%;
+}
+
+
+.rightSeparatorText {
+	background-color: #000080;
+	width: 100%;
+	align-self: center;
+	color: #ffffff;
+	font-size: 50%;
+	font-weight: bold;
+	text-align: center;
+}
+
+.rightInstructionText {
+	width: 100%;
+	align-self: center;
+	text-align: center;
+}
+
+.buttonText {
+	font-weight: bold;
+}
+
+
+
+
+#theWholeGameDiv {
+
+}
+
+
+#thePartitionTable {
+
+	
+}
+
+#theLeftPanel {
+
+}
+
+#theMiddlePanel {
+
+}
+
+#theRightPanel {
+
+}
+
+
+
+
+
+
+
+
+
+
+#theLeftScoreTable {
+
+}
+
+.aScoreBox {
+
+}
+
+#theScoreTitleBox{
+
+}
+
+
+
+
+
+
+
+
+
+#theMiddleGameTable {
+
+
+}
+
+#theMiddleTop {
+
+}
+
+#theMiddleMiddle {
+
+}
+
+
+#theMiddleFeedback {
+
+}
+
+
+#theMiddleBottom {
+
+}
+
+
+
+
+
+
+#theRightResponseTable {
+
+
+}
+
+
+#theRightTopTitle {
+
+}
+
+#theRightTop {
+
+}
+
+
+#theRightMiddleTitle {
+
+}
+
+
+#theRightMiddle {
+
+}
+
+#theRightBottom {
+
+}
+
+
+
+
+
+#theAns {
+
+}
+
+#theAnsBox {
+
+}
+
+.myMemberBox {
+
+}
+
+#theTrue {
+
+
+}
+
+#trueText {
+
+}
+
+
+#theFalse {
+
+}
+
+#falseText {
+
+}
+
+
+
+#theNext {
+
+}
+
+#nextText {
+
+}
+
+
+
+.jxgbox {
+    /* for IE 7 */
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #356AA0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-touch-action: none;
+}
+
+.JXGtext {
+    /* May produce artefacts in IE. Solution: setting a color explicitly. */
+    background-color: transparent;
+    font-family: Arial, Helvetica, Geneva, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.JXGinfobox {
+    border-style: none;
+    border-width: 1px;
+    border-color: black;
+}
+
+/* CSS attributes will (permantely) overwrite attributes set in JSXGraph */
+.JXGimage {
+    /* opacity: 1.0; */
+}
+
+.JXGimageHighlight {
+    /* opacity: 0.6; */
+}
+
+.myEndpointFont {
+	font-weight: bold;
+	color:"#ff0000";
+}
